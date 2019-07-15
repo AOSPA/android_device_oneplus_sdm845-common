@@ -119,6 +119,7 @@ PRODUCT_COPY_FILES += \
 
 # Tri-state-key
 PRODUCT_PACKAGES += \
+    TriStateHandler \
     tri-state-key_daemon
 
 # Update engine
