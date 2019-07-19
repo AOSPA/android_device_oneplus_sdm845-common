@@ -87,8 +87,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_age=5000 \
     ro.vendor.qti.sys.fw.bservice_enable=true \
     ro.vendor.qti.sys.fw.bservice_limit=5 \
-    vendor.iop.enable_prefetch_ofr=0 \
-    vendor.iop.enable_uxe=0
+    vendor.iop.enable_uxe=1 \
+    vendor.perf.iop_v3.enable=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
