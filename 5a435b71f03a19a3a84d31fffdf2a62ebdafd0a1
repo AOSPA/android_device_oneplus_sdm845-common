@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cdc6ed08_3e7e626f",
+        "filename": "sdm845.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2019-08-24T12:14:53Z",
+      "side": 1,
+      "message": "Why this change",
+      "revId": "5a435b71f03a19a3a84d31fffdf2a62ebdafd0a1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
