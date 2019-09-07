@@ -144,5 +144,5 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
