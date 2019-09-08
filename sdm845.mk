@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
 # Bluetooth
@@ -90,6 +89,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0 \
@@ -118,9 +121,7 @@ PRODUCT_COPY_FILES += \
 
 # Update engine
 PRODUCT_PACKAGES += \
-    brillo_update_payload \
     update_engine \
-    update_engine_sideload \
     update_verifier
 
 #PRODUCT_PACKAGES += \
