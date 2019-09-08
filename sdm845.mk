@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
 # Bluetooth
@@ -118,9 +117,7 @@ PRODUCT_COPY_FILES += \
 
 # Update engine
 PRODUCT_PACKAGES += \
-    brillo_update_payload \
     update_engine \
-    update_engine_sideload \
     update_verifier
 
 #PRODUCT_PACKAGES += \
