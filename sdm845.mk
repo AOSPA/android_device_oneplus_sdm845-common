@@ -20,7 +20,7 @@ $(call inherit-product-if-exists, vendor/oneplus/sdm845-common/sdm845-common-ven
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
+#    $(LOCAL_PATH)/overlay-pa
 
 # Properties
 -include $(LOCAL_PATH)/common-props.mk
@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0 \
@@ -139,5 +143,5 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
