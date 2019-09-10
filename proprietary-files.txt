@@ -76,7 +76,7 @@ etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
 framework/com.qti.location.sdk.jar
 framework/izat.xt.srv.jar
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+#-priv-app/com.qualcomm.location/com.qualcomm.location.apk
 lib64/liblocationservice_jni.so
 lib64/libxt_native.so
 lib64/vendor.qti.gnss@1.0.so
@@ -141,7 +141,7 @@ framework/embmslibrary.jar
 -framework/qcrilhook.jar
 framework/qti-telephony-common.jar|2793cb93727a1114e0b0380fd3c6e9febd6a5dcf
 framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+#-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # Radio - IMS
 -app/ims/ims.apk
