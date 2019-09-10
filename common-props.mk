@@ -64,7 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
+    media.settings.xml=/system/etc/media_profiles_vendor.xml \
     media.stagefright.audio.deep=true \
     media.stagefright.enable-aac=true \
     media.stagefright.enable-fma2dp=true \
