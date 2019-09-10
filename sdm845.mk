@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
+    android.hardware.boot@1.0-impl.recovery \
     bootctl
 
 # Common init scripts
@@ -121,19 +122,10 @@ PRODUCT_COPY_FILES += \
 
 # Update engine
 PRODUCT_PACKAGES += \
+    bootctrl.sdm845.recovery \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.sdm845 \
-    libcutils \
-    librecovery_updater_msm \
-    libz \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
