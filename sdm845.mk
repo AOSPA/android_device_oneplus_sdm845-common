@@ -20,11 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
-
 # Properties
 -include $(LOCAL_PATH)/common-props.mk
 
@@ -160,3 +155,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/msm_irqbalance.conf \
     $(LOCAL_PATH)/configs/perfconfigstore.xml:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/perf/perfconfigstore.xml \
     $(LOCAL_PATH)/configs/android.hardware.graphics.composer@2.3-service.rc:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/android.hardware.graphics.composer@2.3-service.rc
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    SDM845CommonBluetoothRes \
+    SDM845CommonCarrierConfigRes \
+    SDM845CommonFrameworkRes \
+    SDM845CommonFrameworkPARes \
+    SDM845CommonSystemUIPARes \
+    SDM845CommonTelephonyRes
