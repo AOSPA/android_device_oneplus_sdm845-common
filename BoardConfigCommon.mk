@@ -21,6 +21,8 @@ COMMON_PATH := device/oneplus/sdm845-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
