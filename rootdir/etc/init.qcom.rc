@@ -8,6 +8,12 @@ on init
 on boot
     write /dev/cpuset/little/cpus 0-3
 
+on boot
+    mkdir /data/misc/aosp 0770 cameraserver audio
+    write /data/misc/aosp/client_package_name 0
+    chown cameraserver audio /data/misc/aosp/client_package_name
+    chmod 0644 /data/misc/aosp/client_package_name
+
 service dashd /sbin/dashd
     class core
     critical
