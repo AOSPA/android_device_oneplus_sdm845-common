@@ -58,7 +58,9 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbluetooth_qti \
-    libbt-logClient.so
+    libbtconfigstore \
+    libbt-logClient.so \
+    vendor.qti.hardware.btconfigstore@1.0
 
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
